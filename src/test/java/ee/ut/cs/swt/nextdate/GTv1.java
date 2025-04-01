@@ -100,7 +100,7 @@ public class GTv1 {
 	public void testCreatesNextDate16() throws Throwable {
 	    NextDate nextDate0 = new NextDate(12, 12, 12);
 	    String string0 = nextDate0.run(12, 31, 2010);
-	    assertEquals("12/32/2010", string0);
+	    assertEquals("1/1/2011", string0); //was "12/32/2010"
 	}
 
 	@Test(timeout = 4000)
